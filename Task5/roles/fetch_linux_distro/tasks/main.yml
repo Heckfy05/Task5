@@ -1,0 +1,7 @@
+---
+# tasks file for fetch_linux_distro
+  - name: fetch_linux_distro
+    debug: msg="{{ item }}"
+    with_items: 
+    - "{{ ansible_distribution }}"
+    - "{{ ansible_distribution_version }}"
